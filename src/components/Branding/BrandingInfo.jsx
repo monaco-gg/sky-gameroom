@@ -24,9 +24,16 @@ export const BrandingInfo = ({
         width={width} 
         height={height} 
         alt={`${bradingTitle} Logo`}
+        className="rounded-lg"
       />
       {showText && (
-        <p className="ml-6 text-3xl font-archivo font-semibold text-center brandinginfo-primary-text">
+        <p 
+          className="ml-6 text-3xl font-archivo font-semibold text-center text-brandinginfo-primary-text"
+          style={{ 
+            textShadow: '0 2px 3px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(255, 255, 255, 0.3), 0 0 6px rgba(255, 255, 255, 0.25)',
+            filter: 'drop-shadow(0 1px 3px rgba(255, 255, 255, 0.3))'
+          }}
+        >
           {bradingTitle}
         </p>
       )}

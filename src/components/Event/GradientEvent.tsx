@@ -17,7 +17,6 @@ export const GradientEvent = ({ children, className = '' }: GradientEventProps) 
                       ${eventStyle.gradientColor?.to || '#0a011864'} 
                     )`;
 
-  const borderColor = eventStyle.borderColor || '#6d4aff';
   
   return (
     <div

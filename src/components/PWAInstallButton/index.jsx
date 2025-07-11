@@ -74,16 +74,17 @@ const PWAInstallButton = () => {
 
   return (
     <div className="p-2 py-4 mt-10 bg-[#19172c] bg-opacity-50 text-white mx-10 rounded-md">
-      <p className="mt-2 px-6 ">
+      <p className="mt-2 px-2">
         <span className="text-yellow-400 font-bold">
-          🤔 Ainda não tem nosso App instalado?
-        </span>{" "}
-        Instale e melhore sua experiência nos jogos.
+          🤔 Ainda não instalou nosso app?
+        </span>
+        <br />
+        Garanta a melhor experiência nos jogos agora mesmo!
       </p>
       <Button
         onPress={handleInstallClick}
         //color="primary"
-        className="rounded-full mt-4 bg-primary hover:bg-opacity-80 focus-visible:outline-primary"
+        className="rounded-full mt-4 px-2 bg-primary hover:bg-opacity-80 focus-visible:outline-primary"
         disabled={!isIOS && !deferredPrompt}
       >
         {isIOS ? "Como instalar" : "Instalar App"}
@@ -129,9 +130,11 @@ const PWAInstallButton = () => {
             </p>
           </ModalBody>
           <ModalFooter>
-            <Button 
-                    //color="primary" 
-                    className="rounded-full bg-primary hover:bg-opacity-80 focus-visible:outline-primary" onPress={onClose}>
+            <Button
+              //color="primary"
+              className="rounded-full bg-primary hover:bg-opacity-80 focus-visible:outline-primary"
+              onPress={onClose}
+            >
               Entendi
             </Button>
           </ModalFooter>

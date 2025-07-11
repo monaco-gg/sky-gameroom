@@ -3,50 +3,46 @@
     "light": {},
     "dark": {
       "colors": {
-        
-        "background": "#111111",
-        "primary": "#06B4C3",
-        "secondary": "#5f19ed",
+        "background": "#FBD71E",
+        "primary": "#009D3C",
+        "secondary": "#FFE400",
         "error": "#F93154",
-        "success": "#00b74a",
+        "success": "#1F5F1F",
+        
+        "brandinginfo-primary-text": "#007E1F",
+        "topic-primary-text": "#005A15",
+        "description-primary-text": "#004D12",
+        
+        "event-primary-text": "#FFF",
+        "event-secondary-text": "#FFE400",
 
-        "brandinginfo-primary-text": "#FFF",
-
-        "event-primary-text": "#06B4C3",
-        "event-secondary-text": "#fff",
-        "event-border": "#06B4C3",
-        "event-countdown": "#06B4C3",
+        "event-border": "#009541",
+        "event-countdown": "#009541",
         "event-countdown-primary-text": "#FFF",
-        "event-countdown-secondary-text": "#000",
+        "event-countdown-secondary-text": "#202020",
 
-        "menu": "#06B4C3",
-        "menu-text": "#fff",
-        "menu-text-selected": "#e7dd12",
-        "menu-ring": "#fff",
-        "menu-ring-selected": "#e7dd12",
-
-        "rewards": "#06B4C3",
-        "avatar-fallback": "#000",
-        "avatar-fallback-text": "#fff"
+        "menu": "#2E8B2C",
+        "menu-text": "#FFFFFF",
+        "menu-text-selected": "#FFE400",
+        "menu-ring": "#FFFFFF",
+        "menu-ring-selected": "#FFE400",
+        "rewards": "#2E8B2C",
+        "avatar-fallback": "#1F5F1F",
+        "avatar-fallback-text": "#FFFFFF"
       }
     }
   },
   "components": {
     "effect": {
       "clearScreen": {
-        "color": "#06B4C3"
+        "color": "#FBD71E"
       }
     },
     "event": {
-      "borderColor": "#06B4C3",
       "gradientColor": {
-        "from": "#06B4C349",
-        "via": "#3F2C6D77",
-        "to": "#0A0A0A64"
-      },
-      "countDownColor": {
-        "backgroundColor": "#06B4C3",
-        "textColor": "#000"
+        "from": "#00722A",
+        "via": "#009541",
+        "to": "#006122"
       }
     }
   }

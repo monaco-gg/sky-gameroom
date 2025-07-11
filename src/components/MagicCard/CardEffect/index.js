@@ -11,7 +11,7 @@ export default function CardEffect({ front }) {
             alt="Logo"
             width={150}
             height={150}
-            className="rounded-t-lg"
+            className="rounded-lg"
             style={{
               maxWidth: "100%",
               height: "auto",

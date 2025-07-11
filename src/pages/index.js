@@ -164,10 +164,12 @@ export default function Index({ isOngoing, targetDate }) {
                 {/* TODO: MRC customize */}
                 <BrandingInfo></BrandingInfo>
               </div>
-              <p className="mt-6 text-lg leading-8 text-white px-2">
+                          <div className="flex flex-col justify-start items-start mt-8">
+              <span className="text-base text-description-primary-text mb-5">
                 Participe grátis da competição de games clássicos e concorra a
                 prêmios em dinheiro!
-              </p>
+              </span>
+            </div>
               <div className="mt-4 flex items-center gap-x-6 relative z-50">
                 {/* TODO: MRC Customize */}
                 <Button

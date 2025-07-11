@@ -110,11 +110,11 @@ export default function Profile({
   return (
     <RoomLayout title="Configurações" session={session} widthHeader={false}>
       <div className="p-6">
-        <div className="flex flex-col items-start">
-          <h4 className="font-inter text-3xl mb-2">Perfil</h4>
-          <p className="font-inter text-medium text-gray-400 mb-10">
+                <div className="flex flex-col justify-start items-start mt-8">
+          <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Perfil</h1>
+                      <span className="text-base text-description-primary-text mb-5">
             Edite as informações do seu perfil
-          </p>
+          </span>
         </div>
         {session && session.user && globalState.user && (
           <div className="flex flex-col items-center">

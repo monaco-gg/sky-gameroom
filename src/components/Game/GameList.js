@@ -6,10 +6,12 @@ export default function GameList() {
   return <>
     <div className="container">
       <div className="pt-20 lg:pt-0">
-        <h1 className="font-archivo font-bold text-4xl text-center">Games</h1>
-        <p className="font-archivo pt-2 text-wrap text-lg text-neutral-400 text-center mb-5">
-          Relembre os games clássicos em um estilo único.
-        </p>
+        <div className="flex flex-col justify-start items-start mt-8">
+          <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Games</h1>
+          <span className="text-base text-description-primary-text mb-5">
+            Relembre os games clássicos em um estilo único.
+          </span>
+        </div>
         <div className="lg:hidden md:hidden">
           <GameSlider data={games} />
         </div>

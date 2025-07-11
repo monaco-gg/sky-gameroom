@@ -133,8 +133,8 @@ function RankingByGame({ game }) {
   return (
     <div className="mb-6">
       <div className="flex flex-col justify-start items-start mt-4 ml-6">
-        <p className="text-white text-2xl font-bold">Ranking do {game.title}</p>
-        <p className="mb-2 text-sm text-gray-400 mt-4">
+        <p className="text-2xl font-bold text-topic-primary-text">Ranking do {game.title}</p>
+        <p className="mb-2 text-base text-description-primary-text mt-4">
           🏆 Confira quem está dominando!
         </p>
       </div>
@@ -192,8 +192,8 @@ export default function RankingByGames({
       >
         <Tab key={5} title={"Geral"}>
           <div className="flex flex-col justify-start items-start mt-4 ml-6">
-            <p className="text-white text-2xl font-bold">Ranking Geral</p>
-            <p className="mb-4 text-sm text-gray-400 mt-4">
+            <p className="text-2xl font-bold text-topic-primary-text">Ranking Geral</p>
+            <p className="mb-4 text-base text-description-primary-text mt-4">
               🏆 Confira quem está dominando!
             </p>
           </div>

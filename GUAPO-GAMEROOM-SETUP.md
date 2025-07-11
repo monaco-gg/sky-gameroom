@@ -1,15 +1,15 @@
-# VR Gameroom - Setup Guide
+# Guapo Gameroom - Setup Guide
 
 ## 📋 Overview
 
-VR Gameroom is a fork of the Monaco Gameroom project, customized for VR (Virtual Reality) branding and theming. This guide will help you set up and customize the project for your specific needs.
+Guapo Gameroom is a fork of the Monaco Gameroom project, customized for Guapo branding and theming. This guide will help you set up and customize the project for your specific needs.
 
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/monaco-gg/vr-gameroom.git
-cd vr-gameroom
+git clone https://github.com/monaco-gg/guapo-gameroom.git
+cd guapo-gameroom
 ```
 
 ### 2. Install Dependencies

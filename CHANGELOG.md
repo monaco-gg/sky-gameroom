@@ -1,36 +1,36 @@
-## [1.1.2](https://github.com/monaco-gg/vr-gameroom/compare/v1.1.1...v1.1.2) (2025-07-01)
+## [1.1.2](https://github.com/monaco-gg/guapo-gameroom/compare/v1.1.1...v1.1.2) (2025-07-01)
 
 
 ### Bug Fixes
 
-* corrige mensagem de erro inconsistente na variável de ambiente NEXT_PUBLIC_GOOGLE_AD_UNIT_PATH ([7d6ab52](https://github.com/monaco-gg/vr-gameroom/commit/7d6ab52090b3a3150f67c5624d2d8b1052747e34))
+* corrige mensagem de erro inconsistente na variável de ambiente NEXT_PUBLIC_GOOGLE_AD_UNIT_PATH ([7d6ab52](https://github.com/monaco-gg/guapo-gameroom/commit/7d6ab52090b3a3150f67c5624d2d8b1052747e34))
 
-## [1.1.1](https://github.com/monaco-gg/vr-gameroom/compare/v1.1.0...v1.1.1) (2025-07-01)
-
-
-### Bug Fixes
-
-* **firebase:** standardize usage of FIREBASE_PRIVATE_KEY in all API endpoints ([75106fe](https://github.com/monaco-gg/vr-gameroom/commit/75106feadb489b67d1be064c3a4ce1a7616f1510))
-
-# [1.1.0](https://github.com/monaco-gg/vr-gameroom/compare/v1.0.0...v1.1.0) (2025-06-30)
+## [1.1.1](https://github.com/monaco-gg/guapo-gameroom/compare/v1.1.0...v1.1.1) (2025-07-01)
 
 
 ### Bug Fixes
 
-* restore all *_disabled* api files to match main branch ([80aba1a](https://github.com/monaco-gg/vr-gameroom/commit/80aba1acb8e3eb920b934506ec16c8e826fe147c))
-* update branding titles in texts.config.json to "VR Benefícios" ([b8ced20](https://github.com/monaco-gg/vr-gameroom/commit/b8ced20338526910c7d02404979b6c8d7d2ccc36))
+* **firebase:** standardize usage of FIREBASE_PRIVATE_KEY in all API endpoints ([75106fe](https://github.com/monaco-gg/guapo-gameroom/commit/75106feadb489b67d1be064c3a4ce1a7616f1510))
+
+# [1.1.0](https://github.com/monaco-gg/guapo-gameroom/compare/v1.0.0...v1.1.0) (2025-06-30)
+
+
+### Bug Fixes
+
+* restore all *_disabled* api files to match main branch ([80aba1a](https://github.com/monaco-gg/guapo-gameroom/commit/80aba1acb8e3eb920b934506ec16c8e826fe147c))
+* update branding titles in texts.config.json to "Guapo Benefícios" ([b8ced20](https://github.com/monaco-gg/guapo-gameroom/commit/b8ced20338526910c7d02404979b6c8d7d2ccc36))
 
 
 ### Features
 
-* restore Ads Reward and Store logic from feature-custom-gr branch (clean, no secrets) ([b47eb55](https://github.com/monaco-gg/vr-gameroom/commit/b47eb554031f4d0ec839a6435e456cb8d88f0167))
+* restore Ads Reward and Store logic from feature-custom-gr branch (clean, no secrets) ([b47eb55](https://github.com/monaco-gg/guapo-gameroom/commit/b47eb554031f4d0ec839a6435e456cb8d88f0167))
 
 # 1.0.0 (2025-06-28)
 
 
 ### Features
 
-* disable orders and webhooks APIs, add Docker support for AWS deployment ([8acd3a2](https://github.com/monaco-gg/vr-gameroom/commit/8acd3a2dfaafd905424efeaba1aa664fabec184a))
+* disable orders and webhooks APIs, add Docker support for AWS deployment ([8acd3a2](https://github.com/monaco-gg/guapo-gameroom/commit/8acd3a2dfaafd905424efeaba1aa664fabec184a))
 
 # [1.133.0](https://github.com/monaco-gg/monaco-gameroom/compare/v1.132.0...v1.133.0) (2025-03-07)
 

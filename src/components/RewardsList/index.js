@@ -75,17 +75,19 @@ export default function RewardsList({ hideText, isHome }) {
 
   return (
     <div className="container">
-      {!hideText && (
-        <div className="pt-10 lg:pt-10">
-          <h1 className="font-archivo font-bold text-xl text-center">
-            Premiação
-          </h1>
-          <p className="font-inter pt-2 px-10 text-wrap text-lg text-neutral-300 text-center mb-5">
-            As melhores pontuações ganharão prêmios incríveis. Entre, escolha
-            seu jogo favorito e bora competir.
-          </p>
-        </div>
-      )}
+              {!hideText && (
+          <div className="pt-10 lg:pt-10">
+            <div className="flex flex-col justify-start items-start mt-8">
+              <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">
+                Premiação
+              </h1>
+              <span className="text-base text-description-primary-text mb-5">
+                As melhores pontuações ganharão prêmios incríveis. Entre, escolha
+                seu jogo favorito e bora competir.
+              </span>
+            </div>
+          </div>
+        )}
       <div>
         <Slider {...settings}>
           {images.map((image, index) => (

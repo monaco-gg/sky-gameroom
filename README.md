@@ -1,10 +1,10 @@
-### README: VR Gameroom
+### README: Guapo Gameroom
 
 ---
 
 #### Description
 
-VR Gameroom is a web application project built using Next.js, designed for web games and associated activities. It leverages various technologies and libraries to provide a seamless user experience.
+Guapo Gameroom is a web application project built using Next.js, designed for web games and associated activities. It leverages various technologies and libraries to provide a seamless user experience.
 
 ---
 
@@ -15,8 +15,8 @@ To run this project locally, follow these steps:
 1. **Clone Repository:**
 
    ```bash
-   git clone git@github.com:monaco-gg/vr-gameroom.git
-   cd vr-gameroom
+   git clone git@github.com:monaco-gg/gpo-gameroom.git
+   cd gpo-gameroom
    ```
 
 2. **Install Dependencies:**

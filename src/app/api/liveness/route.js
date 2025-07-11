@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   return NextResponse.json({
-    message: "✅ vr-gameroom Liveness OK!",
+    message: "✅ gpo-gameroom Liveness OK!",
     status: "healthy",
     timestamp: new Date().toISOString()
   });

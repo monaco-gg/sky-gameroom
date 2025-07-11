@@ -209,16 +209,16 @@ export default function Ranking({
         <>
           <div className="mr-6 ml-6">
             <div className="flex flex-col justify-start items-start mt-8">
-              <h1 className="text-3xl font-semibold mb-2">
+              <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">
                 Oi {session?.user?.name.split(" ")[0]}
               </h1>
-              <p className="text-base text-left text-gray-400">
+              <span className="text-base text-description-primary-text mb-5">
                 {targetDate
                   ? isOngoing
                     ? "Confira o tempo restante da competição"
                     : "Confira o tempo restante para o próximo evento e enquanto isso pratique e convide amigos!"
                   : "Fique atento para futuras competições e enquanto isso pratique e convide amigos!"}
-              </p>
+              </span>
             </div>
             <div className="flex mt-6 mb-4 w-full overflow-hidden">
               <div className="max-w-full mx-auto">
@@ -234,7 +234,7 @@ export default function Ranking({
           <AdBanner slot={3180566253} />
 
           <div className="mx-6 mb-2 mt-1 text-left">
-            <span className="text-base text-gray-400">
+            <span className="text-base text-description-primary-text">
               Destaques da Competição por Game
             </span>
           </div>

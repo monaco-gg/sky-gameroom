@@ -181,11 +181,11 @@ export default function Store({ initialProducts, initialCouponCode }) {
   return (
     <>
       <RoomLayout session={session} title={"Loja"}>
-        <div className="mr-6 ml-6">
-          <div className="flex flex-col justify-start items-start text-center mt-8 mb-2 gap-y-2">
-            <h1 className="font-inter text-3xl mb-2">Continue jogando!</h1>
-            <span className="font-inter text-medium mb-5 text-gray-400 text-left">
-              Adquira mais fichas para competir com seus amigos!
+        <div className="mr-6 ml-6 ">
+                    <div className="flex flex-col justify-start items-start mt-8">
+            <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Continue jogando!</h1>
+                          <span className="text-base text-description-primary-text mb-5 text-center md:text-left w-full">
+              Quanto mais você joga, mais tickets ganha. Acompanhe o Ranking e seja o primeiro para ganhar a premiação.
             </span>
           </div>
           {isGoogleAdsEnabled && (

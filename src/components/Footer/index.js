@@ -6,12 +6,12 @@ export default function Footer() {
       <div className="container mx-auto px-6 lg:px-20 text-center">
         <div className="lg:flex pt-6 lg:pt-2 text-left w-full">
           <div className="flex md:hidden text-center justify-center w-full items-center">
-            <Image src="/logo.png" alt="Monaco" width={40} height={40} />
+            <Image src="/logo.png" alt="Monaco" width={40} height={40} className="rounded-lg" />
           </div>
 
           <div className="flex-1 flex mt-4">
             <div className="m-4 hidden lg:block">
-              <Image src="/logo.png" alt="Monaco" width={32} height={32} />
+              <Image src="/logo.png" alt="Monaco" width={32} height={32} className="rounded-lg" />
             </div>
             <p className="text-gray-500 ml-5 lg:mt-4 text-center lg:text-left">
               © 2024 Monaco Solucoes LTDA. Todos os direitos reservados. Al Rio

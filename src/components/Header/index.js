@@ -19,12 +19,13 @@ export default function Header() {
             width={32}
             height={32}
             alt={"Logo"}
+            className="rounded-lg"
             style={{
               maxWidth: "100%",
               height: "auto",
             }}
           />
-          <p className="font-archivo font-semibold text-inherit ml-2">Monaco</p>
+          <p className="font-archivo font-semibold text-brandinginfo-primary-text ml-2">Monaco</p>
         </NavbarBrand>
       </NavbarContent>
 

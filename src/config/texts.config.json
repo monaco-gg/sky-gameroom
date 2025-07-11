@@ -1,16 +1,16 @@
 {
   "header": {
-    "logo": "/vr-logo.png",
-    "title": "VR Benefícios"
+    "logo": "/guapo-logo.png",
+    "title": "Rede Guapo"
   },  
 
   "branding": {
-    "logo": "/vr-logo.png",
-    "title": "VR Benefícios",
+    "logo": "/guapo-logo.png",
+    "title": "Rede Guapo",
     "catalog":
     {
-      "logo": "/vr-logo.png",
-      "title": "VR Benefícios"
+      "logo": "/guapo-logo.png",
+      "title": "Rede Guapo"
     }
   }  
 }

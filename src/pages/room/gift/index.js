@@ -78,10 +78,10 @@ export default function Gift({ isOngoing, targetDate }) {
     <RoomLayout session={session} title={"Premiação"}>
       <div className="mr-6 ml-6">
         <div className="flex flex-col justify-start items-start mt-8">
-          <h1 className="text-3xl font-semibold mb-2">
+          <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">
             Oi {session?.user?.name.split(" ")[0]}
           </h1>
-          <span className="text-base text-gray-400">
+          <span className="text-base text-description-primary-text mb-5">
             {targetDate
               ? isOngoing
                 ? "Confira o tempo restante da competição"
@@ -100,8 +100,8 @@ export default function Gift({ isOngoing, targetDate }) {
         </div>
 
         <div className="flex flex-col justify-start items-start mt-8">
-          <h1 className="text-2xl font-semibold mb-2">Prêmiação</h1>
-          <span className="text-base text-gray-400">
+          <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Prêmiação</h1>
+          <span className="text-base text-description-primary-text">
             Participe, acumule pontos e ganhe prêmios. Salve seu telefone para
             que a gente entre em contato no final da competição.
           </span>

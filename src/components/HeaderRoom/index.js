@@ -76,8 +76,14 @@ export default function HeaderRoom({ isBack }) {
           ) : (
             <div className="flex">
               {/* MRC: Marcio Lima */}
-              <Image src={brandingCatalogLogo} width={30} height={30} alt={"Logo"} />
-              <p className="font-archivo font-semibold text-inherit ml-2 self-center">
+              <Image src={brandingCatalogLogo} width={30} height={30} alt={"Logo"} className="rounded-lg" />
+              <p 
+                className="font-archivo font-semibold text-brandinginfo-primary-text ml-2 self-center text-xl"
+                style={{ 
+                  textShadow: '0 2px 3px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(255, 255, 255, 0.3), 0 0 6px rgba(255, 255, 255, 0.25)',
+                  filter: 'drop-shadow(0 1px 3px rgba(255, 255, 255, 0.3))'
+                }}
+              >
                 {brandingCatalogTitle}
               </p>
             </div>

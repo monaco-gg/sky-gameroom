@@ -177,11 +177,11 @@ export default function CommunityPage() {
   return (
     <RoomLayout title="Comunidade" session={session} widthHeader={true}>
       <div className="p-6">
-        <div className="flex flex-col items-start">
-          <h4 className="font-inter text-3xl mb-2">Comunidade</h4>
-          <p className="font-inter text-medium text-gray-400 mb-6">
+                <div className="flex flex-col justify-start items-start">
+          <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Comunidade</h1>
+                      <span className="text-base text-description-primary-text mb-5">
             Participe de uma comunidade com até 10 pessoas e compita no ranking
-          </p>
+          </span>
         </div>
 
         {error && (
@@ -200,7 +200,7 @@ export default function CommunityPage() {
         )}
 
         {community ? (
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-2">
             <CommunityDetails
               community={community}
               onLeaveCommunity={handleLeaveCommunity}
