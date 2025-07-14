@@ -212,7 +212,7 @@ export default function Ranking({
               <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">
                 Oi {session?.user?.name.split(" ")[0]}
               </h1>
-              <span className="text-base text-description-primary-text mb-5">
+              <span className="text-base text-topic-secondary-text mb-5">
                 {targetDate
                   ? isOngoing
                     ? "Confira o tempo restante da competição"
@@ -234,7 +234,7 @@ export default function Ranking({
           <AdBanner slot={3180566253} />
 
           <div className="mx-6 mb-2 mt-1 text-left">
-            <span className="text-base text-description-primary-text">
+            <span className="text-base text-topic-secondary-text">
               Destaques da Competição por Game
             </span>
           </div>

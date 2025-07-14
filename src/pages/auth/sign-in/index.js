@@ -166,7 +166,7 @@ export default function SignIn({ referralCode, callbackUrl }) {
                 <h2 className="font-archivo mt-6 text-center text-3xl font-semibold leading-9 text-topic-primary-text mb-1">
                   {firstLogin ? "Entre com sua conta!" : "Bem-vindo de volta!"}
                 </h2>
-                <p className="text-center text-md text-description-primary-text px-10 text-balance">
+                <p className="text-center text-md text-topic-secondary-text px-10 text-balance">
                   {firstLogin ? (
                     <>
                       Clique no botão abaixo para{" "}

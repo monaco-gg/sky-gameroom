@@ -4,10 +4,12 @@ import { getSession, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 
+
 import { Button, Divider, Link, Skeleton } from "@nextui-org/react";
 import { NextSeo } from "next-seo";
 
 import GameBackground from "@components/Game/GameBackground";
+
 import { MonacoinIcon } from "@components/Icons/MonacoinIcon";
 import RoomLayout from "@components/Layout/RoomLayout";
 import NotFoundCard from "@components/MagicCard/NotFoundCard";
@@ -19,6 +21,8 @@ import RankingListItem, {
 import { GlobalContext } from "@contexts/GlobalContext";
 import request from "@utils/api";
 import { findGame } from "@utils/data";
+import { generateRadialGradient } from "@utils/colorUtils";
+import { AppConfig } from "@utils/loaderConfig";
 import Image from "next/legacy/image";
 
 import "react-h5-audio-player/lib/styles.css";
@@ -95,9 +99,9 @@ function RankingByGame({
         <Divider />
       </div>
       <div className="mb-6 p-2">
-        <div className="flex flex-col justify-start items-start mt-4 ml-6">
-          <p className="text-white text-2xl font-bold">Ranking</p>
-          <p className="mb-4 text-sm text-gray-400">
+        <div className="flex flex-col justify-start items-start mt-4">
+          <p className="text-2xl mb-2 font-bold text-topic-primary-text">Ranking</p>
+          <p className="mb-2 text-sm text-topic-secondary-text">
             Confira os jogadores que estão dominando este mês de{" "}
             {currentMonthName}.
           </p>
@@ -220,69 +224,81 @@ export default function Game({ ranking, featuredUser, isUserRanking }) {
           siteName: "Monaco",
         }}
       />
-      <div className="p-2">
+      <div className="p-2" style={{ position: "relative" }}>
+        {/* Degradê branco translúcido cobrindo toda a área abaixo do cabeçalho */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0, // ajuste se seu header for fixo, ex: '64px'
+            left: 0,
+            width: "100vw",
+            height: "60vh",
+            zIndex: 0,
+            pointerEvents: "none",
+            background: generateRadialGradient(AppConfig.styles?.components?.radialGradient || {
+              color: "#FFFFFF",
+              opacity: 0.15,
+              position: "50% 0%",
+              size: "120%"
+            })
+          }}
+        />
         <GameBackground imageUrl={game.image}>
-          <p className="text-white text-2xl font-bold">{game.title}</p>
-          <p className="mb-4 text-sm text-gray-400">{game.description}</p>
-
-          <div className="w-full h-[40svh] overflow-hidden relative rounded-lg">
-            <div className="absolute inset-0 w-full h-full">
-              <Image
-                src={game.image}
-                alt={game.title}
-                priority={true}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div>
-          </div>
-        </GameBackground>
-
-        <div className="max-w-sm mx-auto">
-          <div className="bg-neutral-950 shadow-lg rounded-lg p-4 mx-4 bg-opacity-45">
-            <div className="flex justify-around text-center">
-              <div className="w-1/3 text-sm">
-                Estilo <br />
-                {game?.genres[0]}
+            <div className="max-w-sm mx-auto">
+              <p className="text-2xl mb-2 font-bold text-topic-primary-text">{game.title}</p>
+              <p className="mb-4 text-sm text-topic-secondary-text">{game.description}</p>
+              <div className="w-full h-[40svh] overflow-hidden relative rounded-lg mb-4">
+                <div className="absolute inset-0 w-full h-full">
+                  <Image
+                    src={game.image}
+                    alt={game.title}
+                    priority={true}
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
               </div>
-
-              <div className="w-1/3 text-center text-yellow-300 text-sm">
-                {" "}
-                Custo <br />{" "}
-                <div className="flex text-center self-center items-center w-full mx-8">
-                  <MonacoinIcon size={24} layout="fixed" />
-                  <span className="ml-1">1</span>
+              <div className="flex justify-around text-center mt-4">
+                <div className="w-1/3 text-sm text-game-style-description">
+                  Estilo <br />
+                  {game?.genres[0]}
+                </div>
+                <div className="w-1/3 text-center text-sm text-game-cost-description">
+                  Custo <br />
+                  <div className="flex text-center self-center items-center w-full mx-8">
+                    <MonacoinIcon size={24} layout="fixed" />
+                    <span className="ml-1">1</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        {game?.displayRanking === true ? (
-          <RankingByGame
-            currentMonthName={currentMonthName}
-            ranking={ranking}
-            isUserRanking={isUserRanking}
-            featuredUser={featuredUser}
-            game={game}
-          />
-        ) : (
-          <>
-            <div className="ml-4 mr-4 mt-4">
-              <Divider />
-            </div>
-            <div className="mb-6 p-2">
-              <div className="flex flex-col justify-start items-start mt-4 ml-6">
-                <p className="text-white text-2xl font-bold">Ranking</p>
-                <p className="mb-4 text-sm text-gray-400 mt-2">
-                  Ranking indisponível, jogo em fase de testes.
-                </p>
-              </div>
-            </div>
-          </>
-        )}
+            {game?.displayRanking === true ? (
+              <RankingByGame
+                currentMonthName={currentMonthName}
+                ranking={ranking}
+                isUserRanking={isUserRanking}
+                featuredUser={featuredUser}
+                game={game}
+              />
+            ) : (
+              <>
+                <div className="ml-4 mr-4 mt-4">
+                  <Divider />
+                </div>
+                <div className="mb-6 p-2">
+                  <div className="flex flex-col justify-start items-start mt-4 ml-6">
+                    <p className="text-2xl mb-2 font-bold text-topic-primary-text">Ranking</p>
+                    <p className="mb-2 text-sm text-topic-secondary-text mt-2">
+                      Ranking indisponível, jogo em fase de testes.
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
+        </GameBackground>
 
-        <div className="fixed bottom-0 left-0 z-50 w-full p-4 bg-neutral-950 shadow-lg rounded-lg">
+        <div className="fixed bottom-0 left-0 z-50 w-full p-4 bg-neutral-950 shadow-lg rounded-tr-lg rounded-tl-lg">
           <div className="flex justify-between mt-4 mb-10">
             <Button
               as={Link}
@@ -290,7 +306,6 @@ export default function Game({ ranking, featuredUser, isUserRanking }) {
               size="lg"
               fullWidth
               className="mr-2 bg-primary hover:bg-opacity-80 focus-visible:outline-primary"
-              //color="primary"
               isLoading={isLoading}
               onPress={handlePlayButton}
               disabled={isLoading}

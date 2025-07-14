@@ -1,6 +1,6 @@
 // src/utils/loaderConfig.ts
-import styles from "../config/styles.config.json";
-import texts from "../config/texts.config.json";
+const styles = require("../config/styles.config.json");
+const texts = require("../config/texts.config.json");
 
 interface StylesConfig {
   components: {

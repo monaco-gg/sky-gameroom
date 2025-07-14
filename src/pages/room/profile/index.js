@@ -112,7 +112,7 @@ export default function Profile({
       <div className="p-6">
                 <div className="flex flex-col justify-start items-start mt-8">
           <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Perfil</h1>
-                      <span className="text-base text-description-primary-text mb-5">
+                      <span className="text-base text-topic-secondary-text mb-5">
             Edite as informações do seu perfil
           </span>
         </div>
@@ -134,7 +134,7 @@ export default function Profile({
             </div>
             <div className="flex w-full justify-between mb-8">
               <div className="flex flex-col items-start">
-                <span className="text-left text-medium text-gray-400">
+                <span className="text-left text-medium text-profile-primary-text">
                   Tickets
                 </span>
                 <div className="flex items-center mt-2">
@@ -144,7 +144,7 @@ export default function Profile({
                 </div>
               </div>
               <div className="flex flex-col items-end">
-                <span className="text-left text-medium text-gray-400">
+                <span className="text-left text-medium text-profile-primary-text">
                   Fichas
                 </span>
                 <div className="flex items-center mt-2 text-yellow-400">
@@ -158,7 +158,7 @@ export default function Profile({
         )}
         <div className="shadow sm:rounded-lg">
           <div className="mb-4">
-            <span className="text-left text-medium text-gray-400">
+            <span className="text-left text-medium text-profile-primary-text">
               Meus dados
             </span>
           </div>
@@ -307,7 +307,7 @@ export default function Profile({
           </div>
           <div className="flex justify-center mt-8">
             <>
-              <span className="text-small">Precisa de Ajuda?</span>
+              <span className="text-small text-profile-primary-helper-text">Precisa de Ajuda?</span>
               <a
                 href="https://wa.me/551151964630"
                 target="_blank"

@@ -97,7 +97,7 @@ export default function Catalog({
                 <div className="ml-6 mt-6">
           <div className="flex flex-col justify-start items-start mt-8">
             <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Catálogo de Jogos</h1>
-            <span className="text-base text-description-primary-text mb-3">
+            <span className="text-base text-topic-secondary-text mb-3">
               Quanto mais você joga, mais tickets ganha. Acompanhe o Ranking
               e seja o primeiro para ganhar a premiação.
             </span>

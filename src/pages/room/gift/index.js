@@ -81,7 +81,7 @@ export default function Gift({ isOngoing, targetDate }) {
           <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">
             Oi {session?.user?.name.split(" ")[0]}
           </h1>
-          <span className="text-base text-description-primary-text mb-5">
+          <span className="text-base text-topic-secondary-text mb-5">
             {targetDate
               ? isOngoing
                 ? "Confira o tempo restante da competição"
@@ -101,7 +101,7 @@ export default function Gift({ isOngoing, targetDate }) {
 
         <div className="flex flex-col justify-start items-start mt-8">
           <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Prêmiação</h1>
-          <span className="text-base text-description-primary-text">
+          <span className="text-base text-topic-secondary-text">
             Participe, acumule pontos e ganhe prêmios. Salve seu telefone para
             que a gente entre em contato no final da competição.
           </span>

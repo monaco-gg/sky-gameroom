@@ -11,15 +11,29 @@
         
         "brandinginfo-primary-text": "#007E1F",
         "topic-primary-text": "#005A15",
-        "description-primary-text": "#004D12",
+        "topic-secondary-text": "#004D12",
+        
+        "gift-primary-text": "#FFF",
+        "gift-secondary-text": "#FFF",
+
+        "profile-primary-text": "#004D12",
+        "profile-primary-helper-text": "#C42B1C",
         
         "event-primary-text": "#FFF",
-        "event-secondary-text": "#FFE400",
+        "event-secondary-text": "#004D12",
+        "event-description-text": "#FFF",
+        "event-value-text": "#FFE400",
 
         "event-border": "#009541",
         "event-countdown": "#009541",
         "event-countdown-primary-text": "#FFF",
         "event-countdown-secondary-text": "#202020",
+
+        "game-back-button": "#009D3C",      
+        "game-style-description": "#009D3C",
+        "game-cost-description": "#009D3C",        
+        "game-background": "#000000",
+
 
         "menu": "#2E8B2C",
         "menu-text": "#FFFFFF",
@@ -44,6 +58,23 @@
         "via": "#009541",
         "to": "#006122"
       }
-    }
+    },
+    "gameBackground": {
+      "gradientColors": {
+        "from": "#000000",
+        "to": "#FBD71E",
+        "opacityFrom": 0.7,
+        "opacityTo": 0
+      },
+      "gradientType": "linear",
+      "gradientDirection": "to bottom",
+      "shadowOpacity": 0.15     
+    },
+    "radialGradient": {
+      "color": "#FFFFFF",
+      "opacity": 0.15,
+      "position": "50% 0%",
+      "size": "120%"
+    }    
   }
 }

@@ -12,7 +12,7 @@ import Image from "next/legacy/image";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { BackIcon } from "../Icons/BackIcon";
-import { AppConfig } from '@utils/loaderConfig';
+import { AppConfig } from "@utils/loaderConfig";
 
 export const getUserInfo = async (email) => {
   return await request(`/users`, "GET", null, { email });
@@ -24,10 +24,11 @@ export const getRankingInfo = async (email) => {
 };
 
 export default function HeaderRoom({ isBack }) {
+  const brandingCatalogLogo =
+    AppConfig.texts.branding.catalog.logo || "/logo-text.png";
+  const brandingCatalogTitle =
+    AppConfig.texts.branding.catalog.title || "Game Room";
 
-  const brandingCatalogLogo = AppConfig.texts.branding.catalog.logo || "/logo-text.png";
-  const brandingCatalogTitle = AppConfig.texts.branding.catalog.title || "Game Room";
-  
   const router = useRouter();
   const { globalState } = useContext(GlobalContext);
 
@@ -64,26 +65,28 @@ export default function HeaderRoom({ isBack }) {
 
   return (
     //TODO: MRC caso queira definir cor o cabeçalo do catalogo é aqui!
-    <Navbar className="bg-transparent">
+    <Navbar 
+      className="bg-transparent"      
+    >
       <NavbarContent>
         <NavbarBrand>
           {isBack ? (
             <>
-              <div onClick={handleBackButton} className="text-neutral-100">
+              <div onClick={handleBackButton} className="text-game-back-button">
                 <BackIcon width={32} />
               </div>
             </>
           ) : (
             <div className="flex">
               {/* MRC: Marcio Lima */}
-              <Image src={brandingCatalogLogo} width={30} height={30} alt={"Logo"} className="rounded-lg" />
-              <p 
-                className="font-archivo font-semibold text-brandinginfo-primary-text ml-2 self-center text-xl"
-                style={{ 
-                  textShadow: '0 2px 3px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(255, 255, 255, 0.3), 0 0 6px rgba(255, 255, 255, 0.25)',
-                  filter: 'drop-shadow(0 1px 3px rgba(255, 255, 255, 0.3))'
-                }}
-              >
+              <Image
+                src={brandingCatalogLogo}
+                width={30}
+                height={30}
+                alt={"Logo"}
+                className="rounded-lg"
+              />
+              <p className="font-archivo font-semibold text-brandinginfo-primary-text ml-2 self-center text-xl">
                 {brandingCatalogTitle}
               </p>
             </div>

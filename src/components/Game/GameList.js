@@ -8,7 +8,7 @@ export default function GameList() {
       <div className="pt-20 lg:pt-0">
         <div className="flex flex-col justify-start items-start mt-8">
           <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Games</h1>
-          <span className="text-base text-description-primary-text mb-5">
+          <span className="text-base text-topic-secondary-text mb-5">
             Relembre os games clássicos em um estilo único.
           </span>
         </div>

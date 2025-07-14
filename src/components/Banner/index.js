@@ -15,7 +15,7 @@ export default function Banner() {
             >
               Monaco Game Room
             </h1>
-            <span className="text-base text-description-primary-text mb-5">
+            <span className="text-base text-topic-secondary-text mb-5">
               Participe da competição de games clássicos e concorra a
               prêmios!
             </span>

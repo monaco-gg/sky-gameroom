@@ -165,7 +165,7 @@ export default function Index({ isOngoing, targetDate }) {
                 <BrandingInfo></BrandingInfo>
               </div>
                           <div className="flex flex-col justify-start items-start mt-8">
-              <span className="text-base text-description-primary-text mb-5">
+              <span className="text-base text-topic-secondary-text mb-5">
                 Participe grátis da competição de games clássicos e concorra a
                 prêmios em dinheiro!
               </span>

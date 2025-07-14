@@ -81,7 +81,7 @@ export default function RewardsList({ hideText, isHome }) {
               <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">
                 Premiação
               </h1>
-              <span className="text-base text-description-primary-text mb-5">
+              <span className="text-base text-topic-secondary-text mb-5">
                 As melhores pontuações ganharão prêmios incríveis. Entre, escolha
                 seu jogo favorito e bora competir.
               </span>
@@ -104,10 +104,10 @@ export default function RewardsList({ hideText, isHome }) {
                   <div className="inline-block">{image.medal}</div>
                 </div>
                 <div className="text-center">
-                  <p className="bg-rewards text-white text-xs font-medium px-2.5 py-0.5 rounded inline-block self-center">
+                  <p className="bg-rewards text-event-description-text text-xs font-medium px-2.5 py-0.5 rounded inline-block self-center">
                     {image.classification}
                   </p>
-                  <p className="font-inter mt-2 text-sm text-center">
+                  <p className="font-inter mt-2 text-sm text-center text-topic-secondary-text">
                     {image.title}
                   </p>
                 </div>

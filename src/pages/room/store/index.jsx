@@ -184,7 +184,7 @@ export default function Store({ initialProducts, initialCouponCode }) {
         <div className="mr-6 ml-6 ">
                     <div className="flex flex-col justify-start items-start mt-8">
             <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Continue jogando!</h1>
-                          <span className="text-base text-description-primary-text mb-5 text-center md:text-left w-full">
+                          <span className="text-base text-topic-secondary-text mb-5 text-left w-full">
               Quanto mais você joga, mais tickets ganha. Acompanhe o Ranking e seja o primeiro para ganhar a premiação.
             </span>
           </div>

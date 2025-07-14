@@ -179,7 +179,7 @@ export default function CommunityPage() {
       <div className="p-6">
                 <div className="flex flex-col justify-start items-start">
           <h1 className="text-2xl font-semibold mb-2 text-topic-primary-text">Comunidade</h1>
-                      <span className="text-base text-description-primary-text mb-5">
+                      <span className="text-base text-topic-secondary-text mb-5">
             Participe de uma comunidade com até 10 pessoas e compita no ranking
           </span>
         </div>
