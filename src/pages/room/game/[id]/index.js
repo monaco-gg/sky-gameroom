@@ -259,7 +259,7 @@ export default function Game({ ranking, featuredUser, isUserRanking }) {
                   />
                 </div>
               </div>
-              <div className="flex justify-around text-center mt-4">
+              <div className="flex justify-around text-center mt-4 bg-game-detail p-[10px] rounded ">
                 <div className="w-1/3 text-sm text-game-style-description">
                   Estilo <br />
                   {game?.genres[0]}

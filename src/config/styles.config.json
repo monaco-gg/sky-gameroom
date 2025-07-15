@@ -3,13 +3,14 @@
     "light": {},
     "dark": {
       "colors": {
-        "background": "#FFF",
+        "background": "#F5F5F5",
         "primary": "#E30608",
         "secondary": "#FFE400",
         "error": "#F93154",
         "success": "#E30608",
         
         "brandinginfo-primary-text": "#353535",
+        "brandinginfo": "#FFF",
 
         "topic-primary-text": "#353535",
         "topic-secondary-text": "#2C2C2C",
@@ -30,9 +31,10 @@
         "event-countdown-primary-text": "#FFF",
         "event-countdown-secondary-text": "#000",
 
-        "game-back-button": "#2C2C2C",      
-        "game-style-description": "#353535",
-        "game-cost-description": "#353535",        
+        "game-back-button": "#2C2C2C",  
+        "game-detail": "#353535",     
+        "game-style-description": "#FFF",
+        "game-cost-description": "#FFF",        
         "game-background": "#F5F5F5",
 
 
@@ -46,6 +48,7 @@
         "rewards": "#2E8B2C",
         "avatar-fallback": "#1F5F1F",
         "avatar-fallback-text": "#FFFFFF",
+        
         "ranking-primary-text": "#FFF",
         "ranking-secondary-text": "#F5F5F5",
         "ranking-tickets-text": "#F5F5F5",
@@ -65,23 +68,6 @@
         "via": "#555457",
         "to": "#112121"
       }
-    },
-    "gameBackground": {
-      "gradientColors": {
-        "from": "#000000",
-        "to": "#FBD71E",
-        "opacityFrom": 0.7,
-        "opacityTo": 0
-      },
-      "gradientType": "linear",
-      "gradientDirection": "to bottom",
-      "shadowOpacity": 0.15     
-    },
-    "radialGradient": {
-      "color": "#FFFFFF",
-      "opacity": 0.15,
-      "position": "50% 0%",
-      "size": "120%"
-    }    
+    }      
   }
 }

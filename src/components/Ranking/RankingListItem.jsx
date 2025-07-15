@@ -57,8 +57,7 @@ const RankingListItem = ({
         />
       ) : (
         <div
-          className="flex items-center self-center justify-center text-xs font-semibold size-7"
-          style={{ color: "#b4b4b4" }}
+          className="flex items-center self-center justify-center text-xs font-semibold size-7"          
         >
           {position || "-"}
         </div>

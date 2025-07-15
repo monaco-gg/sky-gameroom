@@ -1,9 +1,12 @@
+import { hexToRgba } from '../../utils/colorUtils';
 const stylesConfig = require("../../config/styles.config.json");
 
 export default function GameBackground({ imageUrl, children }) {
-  const shadowOpacity = stylesConfig.gameBackground?.shadowOpacity ?? 0.15;
+  //const shadowOpacity = stylesConfig.gameBackground?.shadowOpacity ?? 0.15;
+  //const gradientHex = stylesConfig.gameBackground?.gradientColors ?? "#2C2C2C";
+  //const gradientRgba = hexToRgba(gradientHex, shadowOpacity);
   const bgStyle = {
-    background: `radial-gradient(circle at 50% 0%, rgba(0,0,0,${shadowOpacity}) 0%, transparent 60%)`,
+    //background: `radial-gradient(circle at 50% 0%, ${gradientRgba} 0%, transparent 60%)`,
     width: "inherit",
     height: "100svh",
     position: "absolute",

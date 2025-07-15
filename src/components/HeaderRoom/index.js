@@ -64,10 +64,8 @@ export default function HeaderRoom({ isBack }) {
   };
 
   return (
-    //TODO: MRC caso queira definir cor o cabeçalo do catalogo é aqui!
-    <Navbar 
-      className="bg-transparent"      
-    >
+    //TODO: MRC caso queira definir cor o cabeçalo do catalogo é aqui! className="bg-[#D63066] text-[#FFFFFF]
+    <Navbar className="bg-brandinginfo" >
       <NavbarContent>
         <NavbarBrand>
           {isBack ? (

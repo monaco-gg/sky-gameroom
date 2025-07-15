@@ -139,7 +139,7 @@ const RoomLayout = ({
         />
       </Head>
       {widthHeader && <HeaderRoom session={session} isBack={isBack} />}
-      <main className="flex flex-col min-h-screenpb-20 flex-grow pb-32 p-0">
+      <main className="flex flex-col min-h-screen pb-20 flex-grow pb-32 p-0">
         {children}
         {!inDevEnvironment && <Analytics />}
         {!inDevEnvironment && <SpeedInsights />}
