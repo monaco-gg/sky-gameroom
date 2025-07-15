@@ -19,5 +19,5 @@ COPY --from=builder /src/node_modules ./node_modules
 COPY --from=builder /src/.next ./.next
 COPY --from=builder /src/public ./public
 
-EXPOSE 8052
+EXPOSE 8053
 CMD ["npm", "run", "start"]
