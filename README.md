@@ -1,10 +1,10 @@
-### README: Guapo Gameroom
+### README: Sky Gameroom
 
 ---
 
 #### Description
 
-Guapo Gameroom is a web application project built using Next.js, designed for web games and associated activities. It leverages various technologies and libraries to provide a seamless user experience.
+Sky Gameroom is a web application project built using Next.js, designed for web games and associated activities. It leverages various technologies and libraries to provide a seamless user experience.
 
 ---
 
@@ -15,8 +15,8 @@ To run this project locally, follow these steps:
 1. **Clone Repository:**
 
    ```bash
-   git clone git@github.com:monaco-gg/gpo-gameroom.git
-   cd gpo-gameroom
+   git clone git@github.com:monaco-gg/sky-gameroom.git
+   cd sky-gameroom
    ```
 
 2. **Install Dependencies:**

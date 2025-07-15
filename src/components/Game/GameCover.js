@@ -19,7 +19,7 @@ export default function GameCover({ game }) {
           Em desenvolvimento
         </span>
       )}
-      <div className="bg-opacity-55 p-4 rounded-b-lg text-center text-balance text-sm
+      <div className="p-4 rounded-b-lg text-center text-balance text-sm
                       bg-primary hover:bg-opacity-80">        
           VER JOGO        
       </div>

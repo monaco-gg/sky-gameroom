@@ -3,15 +3,16 @@
     "light": {},
     "dark": {
       "colors": {
-        "background": "#FBD71E",
-        "primary": "#009D3C",
+        "background": "#FFF",
+        "primary": "#E30608",
         "secondary": "#FFE400",
         "error": "#F93154",
-        "success": "#1F5F1F",
+        "success": "#E30608",
         
-        "brandinginfo-primary-text": "#007E1F",
-        "topic-primary-text": "#005A15",
-        "topic-secondary-text": "#004D12",
+        "brandinginfo-primary-text": "#353535",
+
+        "topic-primary-text": "#353535",
+        "topic-secondary-text": "#2C2C2C",
         
         "gift-primary-text": "#FFF",
         "gift-secondary-text": "#FFF",
@@ -24,39 +25,45 @@
         "event-description-text": "#FFF",
         "event-value-text": "#FFE400",
 
-        "event-border": "#009541",
-        "event-countdown": "#009541",
+        "event-border": "#555457",
+        "event-countdown": "#B3B3B3",
         "event-countdown-primary-text": "#FFF",
-        "event-countdown-secondary-text": "#202020",
+        "event-countdown-secondary-text": "#000",
 
-        "game-back-button": "#009D3C",      
-        "game-style-description": "#009D3C",
-        "game-cost-description": "#009D3C",        
-        "game-background": "#000000",
+        "game-back-button": "#2C2C2C",      
+        "game-style-description": "#353535",
+        "game-cost-description": "#353535",        
+        "game-background": "#F5F5F5",
 
 
-        "menu": "#2E8B2C",
+        "menu": "#E30608",
         "menu-text": "#FFFFFF",
-        "menu-text-selected": "#FFE400",
+        "menu-text-selected": "#2C2C2C",
         "menu-ring": "#FFFFFF",
-        "menu-ring-selected": "#FFE400",
+        "menu-ring-selected": "#2C2C2C",
+
+
         "rewards": "#2E8B2C",
         "avatar-fallback": "#1F5F1F",
-        "avatar-fallback-text": "#FFFFFF"
+        "avatar-fallback-text": "#FFFFFF",
+        "ranking-primary-text": "#FFF",
+        "ranking-secondary-text": "#F5F5F5",
+        "ranking-tickets-text": "#F5F5F5",
+        "ranking-list-text": "#353535"
       }
     }
   },
   "components": {
     "effect": {
       "clearScreen": {
-        "color": "#FBD71E"
+        "color": "#F5F5F5"
       }
     },
     "event": {
       "gradientColor": {
-        "from": "#00722A",
-        "via": "#009541",
-        "to": "#006122"
+        "from": "#112121",
+        "via": "#555457",
+        "to": "#112121"
       }
     },
     "gameBackground": {

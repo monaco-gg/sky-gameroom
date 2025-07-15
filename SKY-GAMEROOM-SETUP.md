@@ -1,15 +1,15 @@
-# Guapo Gameroom - Setup Guide
+# Sky Gameroom - Setup Guide
 
 ## 📋 Overview
 
-Guapo Gameroom is a fork of the Monaco Gameroom project, customized for Guapo branding and theming. This guide will help you set up and customize the project for your specific needs.
+Sky Gameroom is a fork of the Monaco Gameroom project, customized for Sky branding and theming. This guide will help you set up and customize the project for your specific needs.
 
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/monaco-gg/guapo-gameroom.git
-cd guapo-gameroom
+git clone https://github.com/monaco-gg/sky-gameroom.git
+cd sky-gameroom
 ```
 
 ### 2. Install Dependencies
@@ -34,7 +34,7 @@ npm run dev
 
 #### 1. Colors and Theme
 - **Primary Colors**: Update in `tailwind.config.js`
-- **Logo**: Replace `public/logo.png` and related logo files
+- **Logo**: Replace `public/sky-logo.png` and related logo files
 - **Favicon**: Update `public/icon.ico` and icon files in `public/icons/`
 
 #### 2. Game Assets
@@ -50,7 +50,7 @@ npm run dev
 ### Key Files to Customize
 
 1. **`tailwind.config.js`** - Theme colors and styling
-2. **`public/logo.png`** - Main logo
+2. **`public/sky-logo.png`** - Main logo
 3. **`public/manifest.json`** - PWA manifest
 4. **`src/components/Header/index.js`** - Header branding
 5. **`src/pages/index.js`** - Landing page content

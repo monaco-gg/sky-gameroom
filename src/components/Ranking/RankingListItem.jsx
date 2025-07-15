@@ -36,9 +36,12 @@ const RankingListItem = ({
     ? { backgroundColor: "#372779", borderTop: "1px solid #3D3E82" }
     : {};
 
+  const itemBgClass = featured ? 'bg-primary bg-opacity-80 text-white' : 'text-topic-primary-text';
+
+  console.log('itemBgClass: ' + itemBgClass)
   return (
     <div
-      className="flex items-center space-x-4 py-2 px-4 rounded-md bg-primary bg-opacity-80 " 
+      className={`flex items-center space-x-4 py-2 px-4 rounded-md ${itemBgClass}`}
       //style={featuredItemStyle}
     >
       {useMedal && position !== 0 && position <= 3 ? (
@@ -69,19 +72,19 @@ const RankingListItem = ({
       />
 
       <div className="flex flex-col grow">
-        <p className="text-lg font-semibold line-clamp-1 break-all">
+        <p className="text-lg font-semibold line-clamp-1 break-all text-ranking-primary-text">
           {name.length <= 20 ? name : `${name.substring(0, 20)}...`}
         </p>
         {type === RANKING_TYPE.TICKETS && (
           <div className="flex items-center space-x-2">
-            <p className="text-md" style={{ color: "#b4b4b4" }}>
+            <p className="text-md text-ranking-secondary-text" >
               {matches} partida{matches > 1 ? "s" : ""}
             </p>
           </div>
         )}
       </div>
       <div className="flex flex-row items-center">
-        <p className="text-lg font-semibold mr-2" style={{ color: "#b4b4b4" }}>
+        <p className="text-lg font-semibold mr-2 text-ranking-tickets-text">
           {tickets || 0}
         </p>
         {type === RANKING_TYPE.TICKETS ? (

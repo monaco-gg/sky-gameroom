@@ -181,15 +181,16 @@ export default function RankingByGames({
       <Tabs
         aria-label="Ranking por Game"
         fullWidth
-        color={"primary"}
+        color="primary"
         size="md"
         radius="full"
         variant="bordered"
         classNames={{
-          tabContent: "bg-opacity-90",
+          tab: "text-gray-700",
           tabList: "bg-opacity-90",
+          tabContent: "text-ranking-list-text",
         }}
-      >
+      >ranking-list-text
         <Tab key={5} title={"Geral"}>
           <div className="flex flex-col justify-start items-start mt-4 ml-6">
             <p className="text-2xl font-bold text-topic-primary-text">Ranking Geral</p>

@@ -1,16 +1,16 @@
 {
   "header": {
-    "logo": "/guapo-logo.png",
-    "title": "Rede Guapo"
+    "logo": "/sky-logo2.png",
+    "title": "Home TV"
   },  
 
   "branding": {
-    "logo": "/guapo-logo.png",
-    "title": "Rede Guapo",
+    "logo": "/sky-logo3.png",
+    "title": "Home TV",
     "catalog":
     {
-      "logo": "/guapo-logo.png",
-      "title": "Rede Guapo"
+      "logo": "/sky-logo3.png",
+      "title": "Home TV"
     }
   }  
 }
